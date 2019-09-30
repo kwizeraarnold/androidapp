@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/miah"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/appCompatEditText2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/miah" />
+
+    <ImageView
+        android:id="@+id/next"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/rounded_corner2"
+        android:scaleType="centerCrop"
+        android:src="@drawable/arrow"
+        android:text="Button"
+        android:tint="#0F0F0F"
+        app:layout_constraintBottom_toBottomOf="@+id/appCompatEditText2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/appCompatEditText2"
+        app:layout_constraintTop_toTopOf="@+id/appCompatEditText2" />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/appCompatEditText2"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/rounded_corner3"
+        android:hint="Phone Number"
+        android:inputType="phone"
+        android:paddingLeft="10dp"
+        android:textColor="#141414"
+        app:layout_constraintBottom_toBottomOf="@+id/countryCodePicker3"
+        app:layout_constraintEnd_toStartOf="@+id/next"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/countryCodePicker3"
+        app:layout_constraintTop_toTopOf="@+id/countryCodePicker3" />
+
+    <com.hbb20.CountryCodePicker
+        android:id="@+id/countryCodePicker3"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="8dp"
+        android:paddingTop="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/appCompatEditText2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </com.hbb20.CountryCodePicker>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="9dp">
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="0dp"
+        android:layout_height="115dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background" />
+
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="3dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toStartOf="@+id/image3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/features"
+        app:srcCompat="@drawable/background" />
+
+    <ImageView
+        android:id="@+id/image3"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:textColor="#0F0F0F"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/image2"
+        app:layout_constraintTop_toTopOf="@+id/image2"
+        app:srcCompat="@drawable/background" />
+
+    <ImageView
+        android:id="@+id/image6"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_local_phone_black_24dp"
+        app:layout_constraintEnd_toStartOf="@+id/image4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image2" />
+
+    <ImageView
+        android:id="@+id/image4"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toStartOf="@+id/image5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/image6"
+        app:layout_constraintTop_toTopOf="@+id/image6"
+        app:srcCompat="@drawable/background" />
+
+    <ImageView
+        android:id="@+id/image5"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/image4"
+        app:layout_constraintTop_toTopOf="@+id/image4"
+        app:srcCompat="@drawable/background" />
+
+    <TextView
+        android:id="@+id/features"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:gravity="center"
+        android:text="Features"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#0F0F0F"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image1" />
+
+    <TextView
+        android:id="@+id/phone_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Call Hostel"
+        android:textAlignment="center"
+        android:textColor="#0F0F0F"
+        app:layout_constraintStart_toStartOf="@+id/image6"
+        app:layout_constraintTop_toBottomOf="@+id/image6" />
+
+    <TextView
+        android:id="@+id/noticeboard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="NoticeBoard"
+        android:textColor="#0F0F0F"
+        app:layout_constraintStart_toStartOf="@+id/image4"
+        app:layout_constraintTop_toBottomOf="@+id/image4" />
+
+    <TextView
+        android:id="@+id/reading"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Reading Room"
+        android:textColor="#0F0F0F"
+        app:layout_constraintStart_toStartOf="@+id/image5"
+        app:layout_constraintTop_toBottomOf="@+id/image5" />
+
+    <Button
+        android:id="@+id/room"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="#1976D2"
+        android:text="CHOOSE A ROOM"
+        android:textAlignment="center"
+        android:textColor="#0F0F0F"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/noticeboard" />
+
+    <TextView
+        android:id="@+id/room_type"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Double Rooms"
+        android:textColor="#0F0F0F"
+        app:layout_constraintBottom_toBottomOf="@+id/image2"
+        app:layout_constraintStart_toStartOf="@+id/image2" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/circle"
+        android:text="450K"
+        android:textAlignment="gravity"
+        android:textColor="#0F0F0F"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/image2"
+        app:layout_constraintEnd_toStartOf="@+id/image3" />
+
+    <TextView
+        android:id="@+id/single"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Single Rooms"
+        android:textColor="#0F0F0F"
+        app:layout_constraintBottom_toBottomOf="@+id/image3"
+        app:layout_constraintStart_toEndOf="@+id/image2" />
+
+    <TextView
+        android:id="@+id/price2"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+        android:text="800K"
+        android:background="@drawable/circle"
+        android:textColor="#0F0F0F"
+        app:layout_constraintBottom_toBottomOf="@+id/image3"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
